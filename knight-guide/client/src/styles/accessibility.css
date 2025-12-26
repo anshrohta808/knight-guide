@@ -7,7 +7,7 @@
    ========================================== */
 
 /* Use Inter font for modern feel */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
   /* Modern Dark Colors */
@@ -27,10 +27,19 @@
   --color-warning: #f59e0b;
 
   /* Gradient */
-  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --gradient-primary: linear-gradient(
+    135deg,
+    #6366f1 0%,
+    #a855f7 50%,
+    #ec4899 100%
+  );
   --gradient-secondary: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
   --gradient-dark: linear-gradient(135deg, #1a1a24 0%, #12121a 100%);
-  --gradient-glow: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  --gradient-glow: radial-gradient(
+    ellipse at center,
+    rgba(99, 102, 241, 0.15) 0%,
+    transparent 70%
+  );
 
   /* Text Colors - High Contrast for Accessibility */
   --color-text-primary: #f9fafb;
@@ -92,7 +101,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   color: var(--color-text-primary);
   background: var(--color-bg-base);
@@ -103,7 +112,7 @@ body {
 
 /* Background gradient effect */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -261,13 +270,18 @@ textarea:focus {
 }
 
 .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -334,7 +348,6 @@ textarea:focus {
 }
 
 @keyframes emergency-pulse {
-
   0%,
   100% {
     box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
@@ -393,7 +406,7 @@ textarea:focus {
 }
 
 .feature-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -515,18 +528,18 @@ textarea:focus {
   z-index: 100;
 }
 
-.nav>div {
-  padding: 1rem 2rem;
+.nav > div {
+  padding: 0.75rem 1.5rem;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .nav-link {
-  padding: 0.625rem 1.25rem;
+  padding: 0.5rem 1rem;
   color: var(--color-text-secondary);
   text-decoration: none;
   font-weight: 500;
@@ -534,10 +547,11 @@ textarea:focus {
   transition: all 0.2s ease;
   position: relative;
   white-space: nowrap;
+  font-size: 0.9rem;
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -566,8 +580,8 @@ textarea:focus {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 900px) {
-  .nav>div {
+@media (max-width: 1024px) {
+  .nav > div {
     padding: 1rem;
     flex-wrap: wrap;
   }
@@ -881,7 +895,6 @@ input[type="checkbox"] {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
